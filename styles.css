@@ -52,6 +52,49 @@ form {
     background-color: #d518a6;
     transition: 1000ms;
 }
+
+/*scrollbar*/
+::-webkit-scrollbar {
+    width: 10px; /*largura da barra*/
+}
+::-webkit-scrollbar-track {
+    background-color: #220c3b;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #d518a6; /*scrollbar cor*/
+    border-radius: 10px;
+}
+#tarefa {
+    border-radius: 4px;
+    border: 2px;
+    padding: 3px;
+}
+
+#add {
+    background-color: #24ac32;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    color: #f8f8f8;
+}
+
+#add:hover {
+    background-color: #2eec8a;
+    transition: 900ms;
+}
+
+li button {
+    background-color: #e03030;
+    border-radius: 5px;
+    border: 1px;
+    padding: 3px;
+    color: #f8f8f8;
+}
+
+#listaTarefas {
+    list-style-type: none;
+}
+
 /*footer*/
 footer {
     color:#fff;
