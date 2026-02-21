@@ -9,7 +9,7 @@ fetch("https://crudcrud.com/api/2002ec1b7c57431ba8a6b8550de9ec5d/tarefas")
         //cria um novo elemento de li para cada tarefa
         const item = document.createElement("li");
         //define o conteúdo html do item, incluindo descrição e btn
-        item.innerHTML = `${tarefa.descricao} <button onclick="remove('${tarefa._id}', this)">X</button>`
+        item.innerHTML = `${tarefa.descricao} <button onclick="remove('${tarefa._id}', this)">Concluído</button>`
         //adiciona um novo item à lista de tarefas no html
         tarefas.appendChild(item);
     });
@@ -33,7 +33,7 @@ document.getElementById("add").addEventListener("click", () => {
         //cria um novo elemento de li para cada tarefa
         const item = document.createElement("li");
         //define o conteúdo html do item, incluindo descrição e btn
-        item.innerHTML = `${tarefa.descricao} <button onclick="remove('${tarefa._id}', this)">X</button>`
+        item.innerHTML = `${tarefa.descricao} <button onclick="remove('${tarefa._id}', this)">Concluído</button>`
         //adiciona um novo item à lista de tarefas no html
         tarefas.appendChild(item);
     })
