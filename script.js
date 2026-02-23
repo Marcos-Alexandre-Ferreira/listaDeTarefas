@@ -1,7 +1,7 @@
 //seleciona a nossa ul com a lista de tarefas no html
 const tarefas = document.getElementById("listaTarefas");
 //faz uma requisição get para a API externa buscar as tarefas
-fetch("https://crudcrud.com/api/2002ec1b7c57431ba8a6b8550de9ec5d/tarefas")
+fetch("https://crudcrud.com/api/965163df0f674d23b98bb1579b90b418/tarefas")
 .then(resposta => resposta.json()) // cconverte o corpo da resposta em json
 .then((listaDeTarefas) => {
     // itera sobre acada tarefa do array
@@ -18,7 +18,7 @@ fetch("https://crudcrud.com/api/2002ec1b7c57431ba8a6b8550de9ec5d/tarefas")
 document.getElementById("add").addEventListener("click", () => {
     //pega a descrição que o usuário adicionou no input com id tarefa
     const descricao = document.getElementById("tarefa").value;
-    fetch("https://crudcrud.com/api/2002ec1b7c57431ba8a6b8550de9ec5d/tarefas", {
+    fetch("https://crudcrud.com/api/965163df0f674d23b98bb1579b90b418/tarefas", {
         //definimos como POST, mas podemos usar GET, POST, PUT e DELETE
         method: "POST",
         //Definimos os cabeçalhos da requisição, com o tipo do conteúdo json
@@ -42,7 +42,7 @@ document.getElementById("add").addEventListener("click", () => {
 
 function remove(id, elementoBotao) {
     // 1. Avisar o servidor que o item deve ser deletado
-    fetch(`https://crudcrud.com/api/2002ec1b7c57431ba8a6b8550de9ec5d/tarefas/${id}`, { method: 'DELETE' });
+    fetch(`https://crudcrud.com/api/965163df0f674d23b98bb1579b90b418/tarefas/${id}`, { method: 'DELETE' });
 
     // 2. Achar o "Pai" do botão (que é o <li>) e removê-lo
     const liParaRemover = elementoBotao.parentElement; 
